@@ -1,125 +1,183 @@
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wild Bees</title>
+  <style>
+    body {
+      text-align: center;
+      background-image: linear-gradient(rgb(255, 248, 93), rgb(255, 253, 204));
+      min-width: 100%;
+      min-height: 100%;
+    }
+
+    h1 {
+      background-image: linear-gradient(rgb(203, 195, 0), rgb(255, 253, 204));
+      color: rgb(134, 129, 2);
+    }
+
+    h4 {
+      color: rgb(134, 129, 2);
+    }
+
+    .bn632-hover {
+      width: 160px;
+      font-size: 16px;
+      font-weight: 600;
+      color: #fff;
+      cursor: pointer;
+      margin: 20px;
+      height: 55px;
+      text-align: center;
+      border: none;
+      background-size: 300% 100%;
+      border-radius: 50px;
+      transition: all .4s ease-in-out;
+    }
+
+    .bn632-hover:hover {
+      background-position: 100% 0;
+    }
+
+    .bn632-hover:focus {
+      outline: none;
+    }
+
+    .bn632-hover.bn19 {
+      background-image: linear-gradient(
+        to right,
+        #f5ce62,
+        #e43603,
+        #fa7199,
+        #e85a19
+      );
+      box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+    }
 
    
+    .topnav {
+      display: flex;
+      justify-content: center;
+      background-color: #f1c40f; 
+    }
 
-</div>
-<div class="topnav">
-  <a class="active" href="#home">Home</a>
-  <a href="#wildlife trust">Wildlife trust</a>
-  <a href="#about">About</a>
-</div>
-<head>
-  <style>
-  h1{
-    background-image: linear-gradient(rgb(203, 195, 0), rgb(255, 253, 204));
-    color: rgb(134, 129, 2);
-  }
-  h4{
-  
-    color: rgb(134, 129, 2);
-  }
-  
-  .bn632-hover {
-  width: 160px;
-  font-size: 16px;
-  font-weight: 600;
-  color: #fff;
-  cursor: pointer;
-  margin: 20px;
-  height: 55px;
-  text-align:center;
-  border: none;
-  background-size: 300% 100%;
-  border-radius: 50px;
-  moz-transition: all .4s ease-in-out;
-  -o-transition: all .4s ease-in-out;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
-}
+    .topnav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      text-align: center;
+    }
 
-.bn632-hover:hover {
-  background-position: 100% 0;
-  moz-transition: all .4s ease-in-out;
-  -o-transition: all .4s ease-in-out;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
-}
+    .topnav a:hover {
+      background-color: #e0b700; 
+      color: black;
+    }
 
-.bn632-hover:focus {
-  outline: none;
-}
+    .topnav a.active {
+      background-color: #e67e22; 
+      color: white;
+    }
 
-.bn632-hover.bn19 {
-  background-image: linear-gradient(
-    to right,
-    #f5ce62,
-    #e43603,
-    #fa7199,
-    #e85a19
-  );
-  box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
-}
-  
-  
-     body{
-         text-align: center;
-         background-image: linear-gradient(rgb(255, 248, 93), rgb(255, 253, 204));
-         min-width: 100%;
-         min-height: 100%;
-      
-  
-  
+    /* Button styles */
+    .go-to-button {
+      position: fixed;
+      bottom: 30px;
+      background-color: yellow;
+      font-size: 24px; /* Larger font size for the arrows */
+      color: black;
+      padding: 10px;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+    }
 
-</style>
-  
+    .go-to-button:hover {
+      background-color: #f0e000;
+    }
+
+    .go-to-top {
+      right: 20px;
+    }
+
+    .go-to-bottom {
+      left: 20px;
+    }
+
+    
+    .go-to-button span {
+      font-size: 30px; 
+    }
+  </style>
 </head>
 
 <body>
-<h1> <em>Wild bees </em> </h1>
 
-<p>
+  <div class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a href="#wildlife-trust">Wildlife Trust</a>
+    <a href="#about">About</a>
+  </div>
 
-<h4>
-bees are very important <br> in our world as they pollinate flowers <br> Transferring this pollen helps the flowers to continue to grow<br> which is vital for the planet!
-</h4>
-<iframe src="https://giphy.com/embed/THDBkIhJ42uqjXxXAs" width="480" height="322" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/THDBkIhJ42uqjXxXAs">via GIPHY</a></p>
-</p>
+  <h1><em>Wild Bees</em></h1>
 
+  <h4>Bees are very important in our world as they pollinate flowers. Transferring this pollen helps the flowers to continue to grow, which is vital for the planet!</h4>
 
-<p>
-<h4>
-<em><strong>Bees are currently facing extinction</strong></em> <br>  They're at risk due to climate breakdown and habitat loss. <br> Shifts in the seasons are disrupting flowering times and the <strong>availability of food</strong>, <BR> shelter and nesting sites. Climate change also brings extremes of drought,<br> heavier rainfall and flooding. Bees and pollinating insects are struggling to survive.
-</h4>
-</p>
+  <iframe src="https://giphy.com/embed/THDBkIhJ42uqjXxXAs" width="480" height="322" frameborder="0" class="giphy-embed" allowfullscreen></iframe>
+  <p><a href="https://giphy.com/gifs/THDBkIhJ42uqjXxXAs">via GIPHY</a></p>
 
+  <h4><em><strong>Bees are currently facing extinction</strong></em> – They're at risk due to climate breakdown and habitat loss. Shifts in the seasons are disrupting flowering times and the <strong>availability of food</strong>, shelter, and nesting sites. Climate change also brings extremes of drought, heavier rainfall, and flooding. Bees and pollinating insects are struggling to survive.</h4>
 
-<p>
-<h1>
-wild bee types! 
-</h1>
-</p>
-<p>
-<h4>
-there are many different types of wild bees <br> such as Bumblebees, Honey bees, Carpenter bees and Leaf-cutter bees!
+  <h1>Wild Bee Types!</h1>
 
-</h4>
-</p>
+  <h4>There are many different types of wild bees, such as Bumblebees, Honey bees, Carpenter bees, and Leaf-cutter bees!</h4>
+  
+  <p>
+  <h4>
+  There are also "domesticated" types of bees that live in <br>
+  artififcial hives. These bees are usually used to produce honey <br> that will be harvested and sold! The bees that make honey are called <br> 'honeybees.'!
+  </h4>
+  </p>
 
-<img src=""
-
+  
+  
 
   <a href="https://thebeeconservancy.org/10-ways-to-save-the-bees/">
-   <button class="bn632-hover bn19">SAVE THE BEES</button>
+    <button class="bn632-hover bn19">SAVE THE BEES</button>
   </a>
 
+  
+  <button class="go-to-button go-to-top" onclick="scrollToTop()">
+    <span>&uarr;</span> 
+  </button>
 
+
+  <button class="go-to-button go-to-bottom" onclick="scrollToBottom()">
+    <span>&darr;</span> 
+  </button>
+
+  <script>
+   
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+
+
+    function scrollToBottom() {
+      window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: 'smooth'
+      });
+    }
+  </script>
 
 </body>
-
-</html>
-
-
-
-</body>
-
 </html>
