@@ -18,6 +18,7 @@
 
     h4 {
       color: rgb(134, 129, 2);
+      margin: 20px 0;
     }
 
     .bn632-hover {
@@ -54,11 +55,10 @@
       box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
     }
 
-   
     .topnav {
       display: flex;
       justify-content: center;
-      background-color: #f1c40f; 
+      background-color: #f1c40f;
     }
 
     .topnav a {
@@ -66,24 +66,44 @@
       padding: 14px 20px;
       text-decoration: none;
       text-align: center;
+      position: relative;
+      font-size: 18px;
+      transition: all 0.3s ease;
     }
 
     .topnav a:hover {
-      background-color: #e0b700; 
+      background-color: #e0b700;
       color: black;
+      transform: scale(1.1);
+    }
+
+    .topnav a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 3px;
+      bottom: 0;
+      left: 50%;
+      background-color: #e67e22;
+      transition: width 0.3s ease, left 0.3s ease;
+    }
+
+    .topnav a:hover::after {
+      width: 100%;
+      left: 0;
     }
 
     .topnav a.active {
-      background-color: #e67e22; 
+      background-color: #e67e22;
       color: white;
     }
 
-    /* Button styles */
+   
     .go-to-button {
       position: fixed;
       bottom: 30px;
       background-color: yellow;
-      font-size: 24px; /* Larger font size for the arrows */
+      font-size: 24px;
       color: black;
       padding: 10px;
       border: none;
@@ -109,9 +129,8 @@
       left: 20px;
     }
 
-    
     .go-to-button span {
-      font-size: 30px; 
+      font-size: 30px;
     }
   </style>
 </head>
@@ -119,9 +138,9 @@
 <body>
 
   <div class="topnav">
-    <a class="active" href="#home">Home</a>
-    <a href="#wildlife-trust">Wildlife Trust</a>
-    <a href="#about">About</a>
+    <a class="active" href="https://bestbees.com/2023/02/08/bee-facts/">Home</a>
+    <a href="https://www.apimondia.org/latest/10-amazing-facts-about-honeybees">Facts</a>
+    <a href="https://docs.google.com/forms/d/1NK2XnWOGnLbNPvtV1Z4R-ht9PlGPLOonxOHLqPVFJxw/edit?pli=1">Rate my website!</a>
   </div>
 
   <h1><em>Wild Bees</em></h1>
@@ -136,40 +155,30 @@
   <h1>Wild Bee Types!</h1>
 
   <h4>There are many different types of wild bees, such as Bumblebees, Honey bees, Carpenter bees, and Leaf-cutter bees!</h4>
-  
-  <p>
-  <h4>
-  There are also "domesticated" types of bees that live in <br>
-  artififcial hives. These bees are usually used to produce honey <br> that will be harvested and sold! The bees that make honey are called <br> 'honeybees.'!
-  </h4>
-  </p>
 
-  
-  
+  <h4>There are also "domesticated" types of bees that live in <br> artificial hives. These bees are usually used to produce honey <br> that will be harvested and sold! The bees that make honey are called <br> 'honeybees.'</h4>
+
+  <h4>Living on all continents except Antarctica are approximately<br> <strong>350 million</strong> honey bee colonies, the majority wild.<br> This equates to one colony for every 23 people. At approximately 10,000  bees per colony <br>, there are approximately 3.5 trillion individual honey bees <br> on the planet – or 440 per person.</h4>
 
   <a href="https://thebeeconservancy.org/10-ways-to-save-the-bees/">
     <button class="bn632-hover bn19">SAVE THE BEES</button>
   </a>
 
-  
   <button class="go-to-button go-to-top" onclick="scrollToTop()">
-    <span>&uarr;</span> 
+    <span>&uarr;</span>
   </button>
 
-
   <button class="go-to-button go-to-bottom" onclick="scrollToBottom()">
-    <span>&darr;</span> 
+    <span>&darr;</span>
   </button>
 
   <script>
-   
     function scrollToTop() {
       window.scrollTo({
         top: 0,
         behavior: 'smooth'
       });
     }
-
 
     function scrollToBottom() {
       window.scrollTo({
